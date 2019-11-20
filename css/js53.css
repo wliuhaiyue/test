@@ -1,0 +1,52 @@
+/* 标题区域，60*470；内容区域（图片）590*470 */
+.ctboxs {
+	width:830px;
+	height:470px;
+	position: relative;
+	overflow: hidden;
+	border:5px solid orange;
+	/* transform: rotate(90deg); */
+}
+.ctboxs .ctbox {
+	/* 标题宽+内容宽 */
+	width: 650px;
+	height: 470px;
+	display:flex;
+	position: absolute;
+	top:0;
+	/* 2s 匀速划过 */
+	transition:1s linear;
+}
+.ctboxs .ct1 {
+	/* 标题宽*0 */
+	left:0;
+}
+.ctboxs .ct2 {
+	left:650px;
+}
+.ctboxs .ct3 {
+	left:710px;
+}
+.ctboxs .ct4 {
+	left:770px;
+}
+.ctboxs .ctbox .title {
+	color:white;
+	font-size:22px;
+	line-height:36px;
+	/* 字号+左右padding=标题宽22+19*2=60 */
+	padding:130px 19px 0;
+	cursor: pointer;
+}
+.ctboxs .ct1 .title {
+	background:rgb(0, 0, 127);
+}
+.ctboxs .ct2 .title {
+	background:rgb(238, 136, 0);
+}
+.ctboxs .ct3 .title {
+	background:rgb(126, 127, 0);
+}
+.ctboxs .ct4 .title {
+	background:rgb(35, 97, 173);
+}
